@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bisleri — Packaged Drinking Water</title>
+  <meta name="description" content="Purity you can trust since 1969. Explore Bisleri water, our commitment to quality, sustainability initiatives, and get in touch." />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <div class="logo">Bisleri</div>
+      <nav class="nav__links">
+        <a href="#purity">Purity</a>
+        <a href="#products">Products</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact" class="btn btn--small">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1>Purity you can trust since 1969</h1>
+          <p>Packaged drinking water processed through rigorous quality checks to deliver safe, refreshing hydration—anytime, anywhere.</p>
+          <div class="hero__cta">
+            <a href="#products" class="btn">Explore Products</a>
+            <a href="#purity" class="btn btn--ghost">Our Purity Process</a>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="bottle"></div>
+          <div class="ripples"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="purity" class="section section--alt">
+      <div class="container grid-3">
+        <div>
+          <h2>Multi-Stage Purification</h2>
+          <p>From ozonation to micron filtration, every drop passes through a stringent multi-stage process designed to meet exacting standards.</p>
+        </div>
+        <div>
+          <h3>200+ Quality Tests</h3>
+          <p>Each batch is tested across chemical, physical, and microbial parameters to ensure safety and consistency.</p>
+        </div>
+        <div>
+          <h3>Balanced Minerals</h3>
+          <p>Optimized TDS for crisp taste and essential minerals for everyday hydration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="center">Our Products</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>250 ml</h3>
+            <p>Perfect for on-the-go sips at events and meetings.</p>
+          </article>
+          <article class="card">
+            <h3>500 ml</h3>
+            <p>Handy everyday hydration that fits anywhere.</p>
+          </article>
+          <article class="card">
+            <h3>1 Litre</h3>
+            <p>Stay refreshed through long days and commutes.</p>
+          </article>
+          <article class="card">
+            <h3>2 Litres</h3>
+            <p>Family-sized convenience for home and office.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sustainability" class="section section--alt">
+      <div class="container grid-3">
+        <div>
+          <h2>Responsibly Sourced</h2>
+          <p>Facilities designed to reduce water footprint with continuous monitoring and reuse initiatives.</p>
+        </div>
+        <div>
+          <h3>Recyclable Packaging</h3>
+          <p>Committed to recyclable materials and efficient logistics that lower emissions.</p>
+        </div>
+        <div>
+          <h3>Community Programs</h3>
+          <p>Supporting local water conservation and awareness campaigns across regions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faqs" class="section">
+      <div class="container">
+        <h2 class="center">FAQs</h2>
+        <div class="accordion" data-accordion>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Is Bisleri water mineral water?</button>
+            <div class="accordion__content"><p>It is packaged drinking water with balanced minerals added for taste and consistency.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">What is the source of water?</button>
+            <div class="accordion__content"><p>Water is sourced from approved supplies and purified using a multi-stage process.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Are the bottles recyclable?</button>
+            <div class="accordion__content"><p>Yes. Please dispose of bottles in recycling bins where available.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <h2 class="center">Contact Us</h2>
+        <form id="contact-form" novalidate>
+          <div class="form__grid">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="you@example.com" required />
+            </label>
+            <label class="full">
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+            </label>
+          </div>
+          <div class="center">
+            <button class="btn" type="submit">Send Message</button>
+            <p class="form__note" id="form-note" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> Bisleri. All rights reserved.</div>
+      <div class="footer__links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
